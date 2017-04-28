@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  ~ The copyright of this file belongs to Feedzai. The file cannot be
+  ~ reproduced in whole or in part, stored in a retrieval system,
+  ~ transmitted in any form, or by any means electronic, mechanical,
+  ~ photocopying, or otherwise, without the prior permission of the owner.
+  ~
+  ~  © 2017 Feedzai, Strictly Confidential
+  -->
+
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%highlight(%-5level) %red(>) %green(%msg) %n</pattern>
+    </encoder>
+  </appender>
+  <root level="info" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
